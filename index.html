@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin DUPEYRON - Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script>
+        function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+  }
+    </script>
+</head>
+<body>
+     <header>
+
+<div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#resume">Résumé</a></li>
+        <li><a href="#cv">CV Vidéo</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav> 
+  </div>
+  
+  <div class="menu-bg" id="menu-bg"></div>
+  
+  
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h1>Bonjour, je suis Robin DUPEYRON,</h1>
+            <h2>Étudiant en Réseaux & Télécommunications</h2>
+            <img class="cache" src="images/about.jpg" alt="Robin Dupeyron">
+            <p class="feur">Bachelor Universitaire de Technologie IUT de La Rochelle (17)</p>
+
+            <div class="container"><a href="https://pouler.fr" class="button">Télécharger le CV</a></div>
+        </section>
+
+        <section id="resume">
+            <h4>résumé.</h4>
+            <p>Je suis actuellement étudiant en BUT (Bachelor Universitaire de Technologie) à l’IUT de La Rochelle, dans le domaine des Réseaux & Télécommunications, spécialisation Cybersécurité. 
+                A l’issue de ma formation, je prévois d’entrer dans le monde professionnel dans l’administration des systèmes et des réseaux informatiques.</p>
+            <ul class="point">
+                <li>2024 - Aujourd'hui</li>
+            </ul>
+                <p class="droite">Bachelor Universitaire de Technologie (BUT) Réseaux & Télécommunications à l’IUT de La Rochelle (17), spécialisation Cybersécurité.</p>
+            <ul class="point">
+                <li>2021-2024</li>
+            </ul>
+                <p class="droite">Baccalauréat Sciences Technologiques de l’Industrie du Développement Durable, spécialisation Systèmes de l’Information & du Numérique, mention très bien (Lycée Bernard Palissy, Saintes, 17)</p>
+            <ul class="point">
+                <li>2021-2024</li>
+            </ul>
+                <p class="droite">Bénévolat en tant qu’administrateur systèmes & réseaux au sein de l’association de la Maison des Lycéens - Palissy. Gestion d’un parc informatique de 20 postes, baie serveur, caméras de surveillance...
+                    Président de l’association d’octobre 2023 à octobre 2024.</p>
+            
+        </section>
+
+        <section id="cv">
+            <h4>cv vidéo.</h4>
+            <iframe style="border: 0;" width="560" height="315" src="https://www.youtube.com/embed/w8ljtbtHoqA?si=CLGeFsDDnm8gaW5M" title="Vidéo Youtube CV Vidéo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </section>
+
+        <section id="projets">
+            <h4>projets & passions.</h4>
+            <div class="project">
+                <a href="https://www.sudouest.fr/charente-maritime/saintes/saintes-le-concert-solidaire-de-la-maison-des-lyceens-a-sonne-juste-18105899.php"><img src="images/concert.jpg" alt="Image représentant une réunion après le concert solidaire pour Cent pour Un toit"></a>
+                <h3>Réalisation d'un concert solidaire et caritatif</h3>
+                <p class="feur">En faveur de l’association “Cent Pour un Toit”. Gestion administrative & autorisations de l’évènement. 2000 euros récoltés pour l’association à l’issue de l’évènement.</p>
+            </div>
+            <div class="project">
+                <a href="https://www.youtube.com/@HessBus"><img src="images/bus.jpg" alt="Image représentant une maquette de car scolaire sur simulateur"></a>
+                <h3>Maquettes de cars scolaires via simulation</h3>
+                <p class="feur">Réalisation de maquettes réalistes des cars scolaires présents dans la ville de Saintes (17) sur simulateur.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h4>contact.</h4>
+            <p>Pour toute demande, vous pouvez me contacter par les moyens de contact suivants :</p>
+            <div class="quoi"><a href="mailto:contact@patasrv.fr" class="button">Contacter par mail</a></div>
+            <div class="quoi"><a href="https://linkedin.com/in/rdupeyron" target="_blank" class="button">Lien LinkedIn</a></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024-<script>document.write(new Date().getFullYear());</script> Robin Dupeyron, <a href="https://github.com/Rouxbin/PortfolioS104" target="_blank">code sur disponible sur GitHub.</a></p>
+    </footer>
+
+
+
+
+</body>
+</html>
