@@ -1,0 +1,44 @@
+@media screen and (width>=40rem){
+    img {
+        margin-top: 3rem;
+    }
+
+    .cache {
+        display: inline;
+        width: 90%;
+        max-width: 600px; /* Ne dépasse pas 600px */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5%;
+    }
+
+    h1 {
+        text-align:center;
+    }
+
+    h2 {
+        text-align:center;
+    }
+
+    .feur {
+        text-align:center;
+    }
+
+    footer {
+        text-align:center;
+    }
+
+    .container {
+        text-align: center; /* Centers horizontally */
+        height: 4vh; /* Full height to demonstrate vertical centering */
+        line-height: 4vh; /* Same as height to center vertically */
+        margin-bottom:3rem;
+      }
+      
+
+    .button {
+                vertical-align: middle;
+                padding: 10px 20px;
+    }
+}
