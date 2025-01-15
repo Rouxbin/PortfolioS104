@@ -1,0 +1,244 @@
+/* Styles généraux */
+body {
+    background-color: #D2E9FD;
+    font-family: Poppins, sans-serif;
+    color: #03045E;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titres principaux */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 3.5rem;
+}
+
+h2 {
+    font-size: 2.4rem; 
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    word-wrap: break-word; 
+    text-align: left; /* Garde l'alignement des h2 à gauche */
+}
+
+href {
+    outline: none;
+}
+
+h4 {
+    font-size: 3.2rem; 
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    word-wrap: break-word; 
+    text-align: left; /* Garde l'alignement des h2 à gauche */
+    color:#480A81;
+}
+
+.cache {
+    display: none;
+}
+
+/* Titres des articles */
+h3 {
+    font-size: 1.4rem; /* Taille ajustée pour les titres des articles */
+    font-weight: 800; /* Gras */
+    text-align: center; /* Centré */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Paragraphe général */
+p {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 2;
+}
+
+/* Dates sous forme de liste à puces */
+.resume ul {
+    list-style-type: disc;
+    padding-left: 2rem; /* Décale légèrement à droite */
+    margin: 1rem 0;
+}
+
+.resume li {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #03045E; /* Restaurer une bordure visible */
+    border-radius: 4px;
+    background-color: #03045E; /* Couleur blanche par défaut */
+    transition: all 0.2s ease-in;
+    /*position: relative; */
+    overflow: hidden;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #FFFFFF; /* Texte bleu */
+    z-index: 1;
+    margin-left: 10px; /* Décalage léger à droite */
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #03045E;
+    border: 2px solid #03045E; /* Bordure conserve sa couleur */
+    background-color: #FFFFFF;
+}
+
+/* Images des articles */
+img {
+    width: 90%;
+    max-width: 600px; /* Ne dépasse pas 600px */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8%;
+}
+
+/* Vidéo YouTube */
+iframe {
+    width: 90%; /* S'ajuste à l'écran */
+    max-width: 600px; /* Limite à 600px */
+    height: 315px; /* Taille classique des vidéos YouTube */
+    display: block;
+    margin: 0 auto;
+    border: none; 
+    border-radius: 8%;
+}
+
+.point {
+    font-size:1.1rem;
+    font-weight:700;
+    list-style-type: disc;
+    padding-left:2rem;
+}
+
+.droite {
+    padding-left:3rem;
+}
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 2.5rem; 
+    }
+    h3 {
+        font-size: 1.5rem; 
+    }
+}
+
+.quoi {
+    margin:1rem;
+}
+
+/*****************************/
+/* MENU BURGER              */
+/***************************/
+
+#menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #03045E;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #03045E, #03045E);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
